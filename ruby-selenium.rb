@@ -21,6 +21,8 @@ driver.navigate.to "http://www.google.co.uk"
 
 # send_keys doesn't require brackets, and you can chain actions using comma.
 # Send control chars using :<key name>
+# The "q" is the element on the Google search page for the search box. The HTML has the name of "q" for this element.
+# The ENTER is to simulate a user having pressder Enter after entering their search term ("selenium").
 driver.find_element(name: "q").send_keys "selenium", :enter
 
 #close session
